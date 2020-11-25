@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <Mheader />
+    <SliderBar />
+    <PageBoard />
   </div>
 </template>
+
+<script>
+import Mheader from "@/components/Mheader"
+import SliderBar from "@/components/SliderBar"
+import PageBoard from "@/components/PageBoard"
+
+export default {
+  name: 'App',
+  components:{ Mheader, SliderBar, PageBoard },
+  mounted(){
+    console.log(111)
+    console.log(this)
+  }
+}
+
+</script>>
 
 <style lang="scss">
 #app {
