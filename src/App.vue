@@ -10,6 +10,7 @@
 import Mheader from "@/components/Mheader"
 import SliderBar from "@/components/SliderBar"
 import PageBoard from "@/components/PageBoard"
+import { getUserInfo } from '@/api/user'
 
 export default {
   name: 'App',
@@ -17,6 +18,11 @@ export default {
   mounted(){
     console.log(111)
     console.log(this)
+    getUserInfo(1).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
   }
 }
 
