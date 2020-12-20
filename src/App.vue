@@ -3,6 +3,7 @@
     <Mheader />
     <SliderBar />
     <PageBoard />
+    <p>我更新了</p>
   </div>
 </template>
 
