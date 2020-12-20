@@ -11,18 +11,21 @@ import Mheader from "@/components/Mheader"
 import SliderBar from "@/components/SliderBar"
 import PageBoard from "@/components/PageBoard"
 import { getUserInfo } from '@/api/user'
-
 export default {
   name: 'App',
   components:{ Mheader, SliderBar, PageBoard },
+  data(){
+    return {
+      content: ''
+    }
+  },
   mounted(){
-    console.log(111)
-    console.log(this)
-    getUserInfo(1).then(res => {
-      console.log(res)
-    }).catch(err => {
-      console.log(err)
-    })
+    // console.log(this)
+    // this.$store.dispatch('incrementAsync')
+    // let a = this.$store.getters.count
+    // console.log(a)
+
+    getUserInfo(1)
   }
 }
 

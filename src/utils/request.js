@@ -22,7 +22,7 @@ const service = axios.create({
 service.interceptors.response.use(
     response => {
         const res = response.data
-        console.log(res)
+        // console.log(res)
         // if(response.code !== 20000) {
         //     // if(res.code === 50008 || res.code === 50012 || res.code === 50014){
 

@@ -8,7 +8,7 @@
     export default{
         name: 'Mheader',
         mounted(){
-            console.log(this)
+            // console.log(this)
         },
     }
 </script>
